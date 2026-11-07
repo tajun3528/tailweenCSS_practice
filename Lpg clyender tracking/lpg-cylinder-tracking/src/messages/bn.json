@@ -1,0 +1,161 @@
+{
+  "app": {
+    "name": "এলপিজি সিলিন্ডার ট্র্যাকার"
+  },
+  "nav": {
+    "dashboard": "ড্যাশবোর্ড",
+    "customers": "গ্রাহক",
+    "cylinders": "সিলিন্ডার",
+    "orders": "অর্ডার",
+    "deliveries": "ডেলিভারি",
+    "billing": "বিলিং",
+    "reports": "রিপোর্ট",
+    "settings": "সেটিংস"
+  },
+  "common": {
+    "save": "সংরক্ষণ করুন",
+    "cancel": "বাতিল করুন",
+    "delete": "মুছে ফেলুন",
+    "edit": "সম্পাদনা করুন",
+    "add": "যোগ করুন",
+    "search": "অনুসন্ধান করুন",
+    "filter": "ফিল্টার",
+    "export": "রপ্তানি করুন",
+    "print": "প্রিন্ট করুন",
+    "loading": "লোড হচ্ছে...",
+    "noData": "কোনো তথ্য পাওয়া যায়নি",
+    "confirm": "নিশ্চিত করুন",
+    "back": "পেছনে",
+    "next": "পরবর্তী",
+    "actions": "কার্যক্রম",
+    "status": "অবস্থা",
+    "total": "মোট",
+    "yes": "হ্যাঁ",
+    "no": "না"
+  },
+  "dashboard": {
+    "title": "ড্যাশবোর্ড",
+    "todayOrders": "আজকের অর্ডার",
+    "todayDeliveries": "আজকের ডেলিভারি",
+    "todayRevenue": "আজকের আয়",
+    "pendingOrders": "অপেক্ষমান অর্ডার",
+    "lowStock": "স্বল্প স্টক",
+    "duePayments": "বকেয়া পরিশোধ",
+    "recentOrders": "সাম্প্রতিক অর্ডার",
+    "quickActions": "দ্রুত কার্যক্রম",
+    "newOrder": "নতুন অর্ডার",
+    "newCustomer": "নতুন গ্রাহক"
+  },
+  "customers": {
+    "title": "গ্রাহক তালিকা",
+    "addNew": "নতুন গ্রাহক যোগ করুন",
+    "name": "গ্রাহকের নাম",
+    "phone": "ফোন নম্বর",
+    "address": "ঠিকানা",
+    "area": "এলাকা",
+    "totalOrders": "মোট অর্ডার",
+    "status": "অবস্থা",
+    "active": "সক্রিয়",
+    "inactive": "নিষ্ক্রিয়",
+    "searchPlaceholder": "নাম, ফোন বা এলাকা দিয়ে গ্রাহক খুঁজুন..."
+  },
+  "cylinders": {
+    "title": "সিলিন্ডার",
+    "serialNumber": "সিরিয়াল নম্বর",
+    "size": "সাইজ",
+    "status": "অবস্থা",
+    "full": "ভর্তি",
+    "empty": "খালি",
+    "inUse": "ব্যবহারে রয়েছে",
+    "damaged": "ক্ষতিগ্রস্ত",
+    "inTransit": "স্থানান্তর প্রক্রিয়াধীন",
+    "addNew": "নতুন সিলিন্ডার যোগ করুন",
+    "totalStock": "মোট স্টক",
+    "currentCustomer": "বর্তমান গ্রাহক",
+    "sizes": {
+      "kg5": "৫ কেজি",
+      "kg12": "১২ কেজি",
+      "kg25": "২৫ কেজি",
+      "kg45": "৪৫ কেজি"
+    }
+  },
+  "orders": {
+    "title": "অর্ডার",
+    "newOrder": "নতুন অর্ডার",
+    "orderNumber": "অর্ডার নম্বর",
+    "customer": "গ্রাহক",
+    "cylinderType": "সিলিন্ডারের ধরন",
+    "quantity": "পরিমাণ",
+    "deliveryDate": "ডেলিভারির তারিখ",
+    "totalAmount": "মোট টাকা",
+    "pending": "অপেক্ষমান",
+    "confirmed": "নিশ্চিত",
+    "delivering": "ডেলিভারি চলছে",
+    "delivered": "ডেলিভারি সম্পন্ন",
+    "cancelled": "বাতিল"
+  },
+  "deliveries": {
+    "title": "ডেলিভারি",
+    "assignDriver": "চালক নির্ধারণ করুন",
+    "deliveryPerson": "ডেলিভারি কর্মী",
+    "route": "রুট",
+    "schedule": "সময়সূচী",
+    "markComplete": "সম্পন্ন হিসেবে চিহ্নিত করুন",
+    "collectEmpty": "খালি সিলিন্ডার সংগ্রহ"
+  },
+  "billing": {
+    "title": "বিলিং",
+    "invoiceNumber": "ইনভয়েস নম্বর",
+    "totalAmount": "মোট টাকা",
+    "paidAmount": "পরিশোধিত টাকা",
+    "dueAmount": "বকেয়া টাকা",
+    "paymentStatus": "পেমেন্টের অবস্থা",
+    "paid": "পরিশোধিত",
+    "partial": "আংশিক পরিশোধ",
+    "due": "বকেয়া",
+    "recordPayment": "পেমেন্ট জমা করুন",
+    "paymentMethod": "পেমেন্ট মাধ্যম",
+    "cash": "ক্যাশ",
+    "bkash": "বিকাশ",
+    "nagad": "নগদ",
+    "transactionId": "ট্রানজেকশন আইডি",
+    "printInvoice": "ইনভয়েস প্রিন্ট করুন"
+  },
+  "reports": {
+    "title": "রিপোর্ট",
+    "dailySales": "দৈনিক বিক্রয়",
+    "monthlySales": "মাসিক বিক্রয়",
+    "cylinderStock": "সিলিন্ডার স্টক",
+    "customerDues": "গ্রাহকদের বকেয়া",
+    "deliveryPerformance": "ডেলিভারি পারফরম্যান্স",
+    "profitLoss": "লাভ-ক্ষতি",
+    "exportExcel": "এক্সেলে রপ্তানি করুন",
+    "exportPdf": "পিডিএফ এ রপ্তানি করুন",
+    "dateRange": "তারিখের পরিসীমা",
+    "from": "হতে",
+    "to": "পর্যন্ত"
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "staffManagement": "কর্মী ব্যবস্থাপনা",
+    "cylinderPrices": "সিলিন্ডারের মূল্য",
+    "businessProfile": "ব্যবসার বিবরণ",
+    "language": "ভাষা",
+    "businessName": "ব্যবসার নাম",
+    "businessAddress": "ব্যবসার ঠিকানা",
+    "businessPhone": "ব্যবসার ফোন"
+  },
+  "auth": {
+    "login": "লগইন",
+    "logout": "লগআউট",
+    "email": "ইমেইল অ্যাড্রেস",
+    "password": "পাসওয়ার্ড",
+    "loginButton": "লগইন করুন",
+    "loginError": "ভুল ইমেইল বা পাসওয়ার্ড"
+  },
+  "roles": {
+    "admin": "অ্যাডমিন",
+    "manager": "ম্যানেজার",
+    "deliveryPerson": "ডেলিভারি কর্মী"
+  }
+}

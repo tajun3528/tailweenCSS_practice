@@ -1,0 +1,161 @@
+{
+  "app": {
+    "name": "LPG Cylinder Tracker"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "customers": "Customers",
+    "cylinders": "Cylinders",
+    "orders": "Orders",
+    "deliveries": "Deliveries",
+    "billing": "Billing",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "print": "Print",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "actions": "Actions",
+    "status": "Status",
+    "total": "Total",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "todayOrders": "Today's Orders",
+    "todayDeliveries": "Today's Deliveries",
+    "todayRevenue": "Today's Revenue",
+    "pendingOrders": "Pending Orders",
+    "lowStock": "Low Stock",
+    "duePayments": "Due Payments",
+    "recentOrders": "Recent Orders",
+    "quickActions": "Quick Actions",
+    "newOrder": "New Order",
+    "newCustomer": "New Customer"
+  },
+  "customers": {
+    "title": "Customers",
+    "addNew": "Add New Customer",
+    "name": "Customer Name",
+    "phone": "Phone Number",
+    "address": "Address",
+    "area": "Area",
+    "totalOrders": "Total Orders",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "searchPlaceholder": "Search customers by name, phone, or area..."
+  },
+  "cylinders": {
+    "title": "Cylinders",
+    "serialNumber": "Serial Number",
+    "size": "Size",
+    "status": "Status",
+    "full": "Full",
+    "empty": "Empty",
+    "inUse": "In Use",
+    "damaged": "Damaged",
+    "inTransit": "In Transit",
+    "addNew": "Add New Cylinder",
+    "totalStock": "Total Stock",
+    "currentCustomer": "Current Customer",
+    "sizes": {
+      "kg5": "5 KG",
+      "kg12": "12 KG",
+      "kg25": "25 KG",
+      "kg45": "45 KG"
+    }
+  },
+  "orders": {
+    "title": "Orders",
+    "newOrder": "New Order",
+    "orderNumber": "Order Number",
+    "customer": "Customer",
+    "cylinderType": "Cylinder Type",
+    "quantity": "Quantity",
+    "deliveryDate": "Delivery Date",
+    "totalAmount": "Total Amount",
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "delivering": "Delivering",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled"
+  },
+  "deliveries": {
+    "title": "Deliveries",
+    "assignDriver": "Assign Driver",
+    "deliveryPerson": "Delivery Person",
+    "route": "Route",
+    "schedule": "Schedule",
+    "markComplete": "Mark as Complete",
+    "collectEmpty": "Collect Empty Cylinder"
+  },
+  "billing": {
+    "title": "Billing",
+    "invoiceNumber": "Invoice Number",
+    "totalAmount": "Total Amount",
+    "paidAmount": "Paid Amount",
+    "dueAmount": "Due Amount",
+    "paymentStatus": "Payment Status",
+    "paid": "Paid",
+    "partial": "Partial",
+    "due": "Due",
+    "recordPayment": "Record Payment",
+    "paymentMethod": "Payment Method",
+    "cash": "Cash",
+    "bkash": "bKash",
+    "nagad": "Nagad",
+    "transactionId": "Transaction ID",
+    "printInvoice": "Print Invoice"
+  },
+  "reports": {
+    "title": "Reports",
+    "dailySales": "Daily Sales",
+    "monthlySales": "Monthly Sales",
+    "cylinderStock": "Cylinder Stock",
+    "customerDues": "Customer Dues",
+    "deliveryPerformance": "Delivery Performance",
+    "profitLoss": "Profit & Loss",
+    "exportExcel": "Export to Excel",
+    "exportPdf": "Export to PDF",
+    "dateRange": "Date Range",
+    "from": "From",
+    "to": "To"
+  },
+  "settings": {
+    "title": "Settings",
+    "staffManagement": "Staff Management",
+    "cylinderPrices": "Cylinder Prices",
+    "businessProfile": "Business Profile",
+    "language": "Language",
+    "businessName": "Business Name",
+    "businessAddress": "Business Address",
+    "businessPhone": "Business Phone"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email Address",
+    "password": "Password",
+    "loginButton": "Sign In",
+    "loginError": "Invalid email or password"
+  },
+  "roles": {
+    "admin": "Admin",
+    "manager": "Manager",
+    "deliveryPerson": "Delivery Person"
+  }
+}
