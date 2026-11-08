@@ -7,44 +7,53 @@
   <link href="./dist/styles.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="bg-gray-800 py-4 px-4 items-center justify-between flex">
-    <div class="flex items-center space-x-4">
-        <img src="mainLogo.jpg" alt="Tailwind CSS Logo" class="h-12 w-12 rounded-full object-cover">
-    <h1 class="text-white text-2xl mask-radial-from-neutral-900 ">TapMad</h1>
+    <nav class="bg-gray-800 py-4 px-4 items-center justify-between flex">
+        <div class="flex items-center space-x-4">
+            <img src="mainLogo.jpg" alt="Tailwind CSS Logo" class="h-12 w-12 rounded-full object-cover">
+        <h1 class="text-white text-2xl mask-radial-from-neutral-900 ">TapMad</h1>
+        </div>
+        <ul class="flex space-x-4 justify-end-safe mr-0 pl-6">
+            <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">Home</li>
+            <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">About</li>
+            <li class="block bg-amber-400 text-gray-900 font-semibold px-5 py-2 rounded-md hover:bg-amber-300 transition cursor-pointer">Contact</li>
+        </ul>
+    </nav>
+    <main class="bg-linear-to-br from-blue-50 to-green-100 min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+
+    <!-- Left half: text -->
+    <div class="px-6 md:px-12 py-20 text-center md:text-left">
+
+        <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1 rounded-full mb-6">
+        Your health, delivered
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+        Welcome to <span class="text-blue-600">TapMad</span>
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+        TapMad is an online medicine ordering website that lets you browse, order,
+        and receive medicines from the comfort of your home. Upload prescriptions,
+        pay securely, and get your healthcare products delivered quickly to your doorstep.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <button class="cursor-pointer bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-0.5 transition">
+            Get Started
+        </button>
+        <button class="cursor-pointer border-2 border-green-600 text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-600 hover:text-white transition">
+            Learn More
+        </button>
+        </div>
+
     </div>
-    <ul class="flex space-x-4 justify-end-safe mr-0 pl-6">
-        <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">Home</li>
-        <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">About</li>
-        <li class="block bg-amber-400 text-gray-900 font-semibold px-5 py-2 rounded-md hover:bg-amber-300 transition cursor-pointer">Contact</li>
-    </ul>
-  </nav>
-  <main class="bg-linear-to-br from-blue-50 to-green-100 min-h-screen flex items-center">
-  <div class="max-w-3xl mx-auto px-6 py-20 text-center">
 
-    <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1 rounded-full mb-6">
-      Your health, delivered
-    </span>
-
-    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-      Welcome to <span class="text-blue-600">TapMad</span>
-    </h1>
-
-    <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-      TapMad is an online medicine ordering website that lets you browse, order,
-      and receive medicines from the comfort of your home. Upload prescriptions,
-      pay securely, and get your healthcare products delivered quickly to your doorstep.
-    </p>
-
-    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-      <button class="cursor-pointer bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-0.5 transition">
-        Get Started
-      </button>
-      <button class="cursor-pointer border-2 border-green-600 text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-600 hover:text-white transition">
-        Learn More
-      </button>
+    <!-- Right half: logo -->
+    <div class="flex items-center justify-center px-6 pb-12 md:p-12">
+        <img src="mainLogo.jpg" alt="TapMad Logo"
+            class="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover shadow-2xl ring-8 ring-white/60">
     </div>
 
-  </div>
-</main>
+    </main>
 </body>
 </html>
