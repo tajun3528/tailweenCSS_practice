@@ -6,103 +6,102 @@
   <title>TapMad – Order medicines online</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Tailwind v4 in the browser (no build step). For production, swap this for: <link href="./dist/styles.css" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
-  <style>
-    @keyframes rise { from { transform: translateY(2rem) rotate(0deg); opacity: 0; } to { transform: translateY(0) rotate(4deg); opacity: 1; } }
-    .phone { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
-    @media (prefers-reduced-motion: reduce) { .phone { animation: none; transform: rotate(4deg); } }
-  </style>
 </head>
-<body class="bg-[#F6FBF8] text-[#063B2B] font-[Nunito_Sans,sans-serif] antialiased">
+<body class="bg-white text-[#12255A] font-[Figtree,sans-serif] antialiased">
 
   <!-- Hero -->
-  <div class="bg-[#0B7A57] text-white overflow-hidden">
+  <div class="bg-[#D6EBFF]">
     <header class="max-w-6xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 rounded-full focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
-        <img src="mainLogo.jpg" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-white/70">
-        <span class="font-[Unbounded,sans-serif] font-bold text-lg">TapMad</span>
+      <a href="#" class="flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#12255A]">
+        <img src="mainLogo.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+        <span class="font-[Familjen_Grotesk,sans-serif] font-bold text-2xl">TapMad</span>
       </a>
       <nav aria-label="Main">
-        <ul class="flex items-center gap-1 sm:gap-2 text-sm font-semibold">
-          <li><a href="#" class="px-3 py-2 rounded-lg hover:bg-white/15 transition focus-visible:outline-2 focus-visible:outline-white">Home</a></li>
-          <li><a href="#shop" class="px-3 py-2 rounded-lg hover:bg-white/15 transition focus-visible:outline-2 focus-visible:outline-white">About</a></li>
-          <li><a href="#contact" class="ml-1 px-5 py-2.5 rounded-lg bg-[#FFB703] text-[#063B2B] font-extrabold hover:bg-[#ffc936] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact</a></li>
+        <ul class="flex items-center gap-1 sm:gap-4 font-medium">
+          <li><a href="#" class="px-2 py-2 underline-offset-8 hover:underline focus-visible:outline-2 focus-visible:outline-[#12255A]">Home</a></li>
+          <li><a href="#why" class="px-2 py-2 underline-offset-8 hover:underline focus-visible:outline-2 focus-visible:outline-[#12255A]">About</a></li>
+          <li><a href="#contact" class="ml-1 px-5 py-2.5 rounded-lg bg-[#FF5B4D] text-white font-bold hover:bg-[#e84a3c] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#12255A]">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 md:px-12 pt-12 pb-20 md:pt-16 md:pb-28 grid md:grid-cols-2 gap-14 items-center">
+    <section class="max-w-6xl mx-auto px-6 md:px-12 pt-10 pb-20 md:pt-16 md:pb-28 grid md:grid-cols-[1.1fr_1fr] gap-14 items-center">
       <div>
-        <h1 class="font-[Unbounded,sans-serif] font-bold text-4xl md:text-6xl leading-[1.05]">
-          Tap, pay, get your medicine.
+        <h1 class="font-[Familjen_Grotesk,sans-serif] font-bold text-5xl md:text-7xl leading-[0.98] tracking-tight">
+          Your medicines, delivered.
         </h1>
-        <p class="mt-6 max-w-md text-lg leading-relaxed text-white/85">
-          Browse medicines, upload your prescription and have everything delivered to your home. No queues, no trips to the pharmacy.
+        <p class="mt-6 max-w-md text-lg leading-relaxed text-[#12255A]/80">
+          Order medicines and healthcare products online, upload your prescription and pay securely. We bring it to your door.
         </p>
         <div class="mt-9 flex flex-wrap gap-3">
-          <button class="cursor-pointer rounded-xl bg-white text-[#063B2B] font-extrabold px-8 py-3.5 hover:bg-[#E4DEFF] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <button class="cursor-pointer rounded-lg bg-[#12255A] text-white font-bold px-8 py-3.5 hover:bg-[#1c3a8a] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#12255A]">
             Get started
           </button>
-          <button class="cursor-pointer rounded-xl border-2 border-white/70 font-extrabold px-8 py-3 hover:bg-white/15 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          <button class="cursor-pointer rounded-lg border-2 border-[#12255A] font-bold px-8 py-3 hover:bg-[#12255A] hover:text-white transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#12255A]">
             Learn more
           </button>
         </div>
       </div>
 
-      <!-- Phone preview of the ordering flow -->
+      <!-- Blister pack -->
       <div class="flex justify-center md:justify-end">
-        <div class="phone w-72 rounded-[2.5rem] bg-[#F6FBF8] text-[#063B2B] border-[10px] border-[#063B2B] shadow-2xl p-4">
-          <p class="font-[Unbounded,sans-serif] text-sm font-bold">Your cart</p>
-          <ul class="mt-4 space-y-3 text-sm">
-            <li class="flex items-center justify-between gap-2 rounded-2xl bg-white p-3">
-              <span><span class="block font-extrabold">Paracetamol 500 mg</span><span class="text-[#063B2B]/60">10 tablets</span></span>
-              <span class="rounded-full bg-[#E4DEFF] px-3 py-1 font-bold">Added</span>
-            </li>
-            <li class="flex items-center justify-between gap-2 rounded-2xl bg-white p-3">
-              <span><span class="block font-extrabold">Oral saline</span><span class="text-[#063B2B]/60">5 sachets</span></span>
-              <span class="rounded-full bg-[#E4DEFF] px-3 py-1 font-bold">Added</span>
-            </li>
-            <li class="flex items-center justify-between gap-2 rounded-2xl border-2 border-dashed border-[#0B7A57]/50 p-3 text-[#0B7A57]">
-              <span class="font-extrabold">Prescription</span>
-              <span class="rounded-full bg-[#0B7A57] text-white px-3 py-1 font-bold">Upload</span>
-            </li>
-          </ul>
-          <div class="mt-5 rounded-2xl bg-[#FFB703] text-center font-extrabold py-3">Pay and place order</div>
+        <div class="w-72 sm:w-80 -rotate-6 rounded-3xl bg-[#EEF1F5] p-5 shadow-[0_24px_50px_-18px_rgba(18,37,90,.5)] ring-1 ring-[#12255A]/10">
+          <div class="grid grid-cols-4 gap-3" role="img" aria-label="A blister pack of tablets, some already taken">
+            <!-- filled -->
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <!-- popped -->
+            <span class="aspect-square rounded-full bg-[#CBD3DE] shadow-[inset_3px_4px_6px_rgba(18,37,90,.25)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#CBD3DE] shadow-[inset_3px_4px_6px_rgba(18,37,90,.25)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#CBD3DE] shadow-[inset_3px_4px_6px_rgba(18,37,90,.25)]"></span>
+            <span class="aspect-square rounded-full bg-[#CBD3DE] shadow-[inset_3px_4px_6px_rgba(18,37,90,.25)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+            <span class="aspect-square rounded-full bg-[#FF5B4D] shadow-[inset_-4px_-6px_0_rgba(0,0,0,.12),inset_3px_3px_0_rgba(255,255,255,.35)]"></span>
+          </div>
+          <div class="mt-5 flex items-center gap-3 border-t-2 border-dashed border-[#12255A]/25 pt-4">
+            <img src="mainLogo.jpg" alt="TapMad logo" class="h-12 w-12 rounded-full object-cover">
+            <span class="font-[Familjen_Grotesk,sans-serif] font-bold text-lg leading-tight">TapMad<span class="block text-sm font-medium text-[#12255A]/65">Delivered to your door</span></span>
+          </div>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- What you can order -->
-  <main id="shop" class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24">
-    <h2 class="font-[Unbounded,sans-serif] font-bold text-2xl md:text-4xl max-w-xl leading-tight">Everything for your health, in one place</h2>
-    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
-      <a href="#" class="col-span-2 rounded-3xl bg-[#0B7A57] text-white p-6 md:p-8 min-h-48 flex flex-col justify-end hover:-translate-y-1 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0B7A57]">
-        <span class="font-[Unbounded,sans-serif] font-bold text-xl">Prescription medicines</span>
-        <span class="mt-1 text-white/80">Upload a prescription and we handle the rest.</span>
-      </a>
-      <a href="#" class="rounded-3xl bg-[#E4DEFF] p-6 min-h-48 flex flex-col justify-end hover:-translate-y-1 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#063B2B]">
-        <span class="font-[Unbounded,sans-serif] font-bold text-lg">Vitamins</span>
-        <span class="mt-1 text-sm text-[#063B2B]/70">Daily supplements</span>
-      </a>
-      <a href="#" class="rounded-3xl bg-[#FFB703] p-6 min-h-48 flex flex-col justify-end hover:-translate-y-1 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#063B2B]">
-        <span class="font-[Unbounded,sans-serif] font-bold text-lg">Baby care</span>
-        <span class="mt-1 text-sm text-[#063B2B]/70">Gentle essentials</span>
-      </a>
-    </div>
+  <!-- Why TapMad -->
+  <main id="why" class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24 grid md:grid-cols-2 gap-12">
+    <h2 class="font-[Familjen_Grotesk,sans-serif] font-bold text-4xl md:text-5xl leading-tight tracking-tight">Skip the pharmacy queue.</h2>
+    <ul class="space-y-7 text-lg">
+      <li class="flex gap-4">
+        <svg class="mt-1 h-6 w-6 shrink-0 text-[#FF5B4D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+        <span><strong class="block font-bold">Browse and order online</strong><span class="text-[#12255A]/75">Find medicines and healthcare products from home.</span></span>
+      </li>
+      <li class="flex gap-4">
+        <svg class="mt-1 h-6 w-6 shrink-0 text-[#FF5B4D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+        <span><strong class="block font-bold">Upload your prescription</strong><span class="text-[#12255A]/75">Add a photo or file when you check out.</span></span>
+      </li>
+      <li class="flex gap-4">
+        <svg class="mt-1 h-6 w-6 shrink-0 text-[#FF5B4D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>
+        <span><strong class="block font-bold">Pay securely, get it fast</strong><span class="text-[#12255A]/75">Pay online and receive your order at your doorstep.</span></span>
+      </li>
+    </ul>
   </main>
 
   <!-- Closing call to action -->
   <section id="contact" class="max-w-6xl mx-auto px-6 md:px-12 pb-16">
-    <div class="rounded-3xl bg-[#063B2B] text-white p-8 md:p-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <p class="font-[Unbounded,sans-serif] font-bold text-2xl md:text-3xl max-w-md leading-tight">Ready to order your first medicines?</p>
-      <button class="cursor-pointer self-start rounded-xl bg-[#FFB703] text-[#063B2B] font-extrabold px-8 py-3.5 hover:bg-[#ffc936] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+    <div class="rounded-3xl bg-[#12255A] text-white p-8 md:p-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <p class="font-[Familjen_Grotesk,sans-serif] font-bold text-3xl md:text-4xl max-w-md leading-tight">Start your first order today.</p>
+      <button class="cursor-pointer self-start rounded-lg bg-[#FF5B4D] text-white font-bold px-8 py-3.5 hover:bg-[#e84a3c] transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
         Get started
       </button>
     </div>
-    <p class="mt-8 text-sm text-[#063B2B]/65"><span class="font-extrabold text-[#063B2B]">TapMad</span> · Online medicine ordering and delivery</p>
+    <p class="mt-8 text-sm text-[#12255A]/65"><span class="font-bold text-[#12255A]">TapMad</span> – Online medicine ordering and delivery</p>
   </section>
 
 </body>
