@@ -3,57 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Test</title>
-  <link href="./dist/styles.css" rel="stylesheet">
+  <title>TapMad – Order medicines online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Tailwind v4 in the browser (no build step). For production, swap this for: <link href="./dist/styles.css" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
 </head>
-<body>
-    <nav class="bg-gray-800 py-4 px-4 items-center justify-between flex">
-        <div class="flex items-center space-x-4">
-            <img src="mainLogo.jpg" alt="Tailwind CSS Logo" class="h-12 w-12 rounded-full object-cover">
-        <h1 class="text-white text-2xl mask-radial-from-neutral-900 ">TapMad</h1>
-        </div>
-        <ul class="flex space-x-4 justify-end-safe mr-0 pl-6">
-            <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">Home</li>
-            <li class="block text-white px-4 py-2 rounded-md hover:bg-gray-700 transition cursor-pointer">About</li>
-            <li class="block bg-amber-400 text-gray-900 font-semibold px-5 py-2 rounded-md hover:bg-amber-300 transition cursor-pointer">Contact</li>
+<body class="bg-white text-[#111] font-[Work_Sans,sans-serif] antialiased">
+
+  <!-- Nav -->
+  <header class="border-b-4 border-[#111]">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#2F6BFF]">
+        <img src="mainLogo.jpg" alt="" class="h-11 w-11 rounded-full object-cover border-[3px] border-[#111]">
+        <span class="font-[Archivo_Black,sans-serif] text-2xl uppercase">TapMad</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="flex items-center gap-2 sm:gap-4 font-bold">
+          <li><a href="#" class="px-2 py-2 hover:bg-[#FFE14D] transition focus-visible:outline-4 focus-visible:outline-[#2F6BFF]">Home</a></li>
+          <li><a href="#steps" class="px-2 py-2 hover:bg-[#FFE14D] transition focus-visible:outline-4 focus-visible:outline-[#2F6BFF]">About</a></li>
+          <li><a href="#contact" class="px-4 py-2 bg-[#FF8FB1] border-[3px] border-[#111] shadow-[4px_4px_0_#111] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[2px_2px_0_#111] transition focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-[#2F6BFF]">Contact</a></li>
         </ul>
-    </nav>
-    <main class="bg-linear-to-br from-blue-50 to-green-100 min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+      </nav>
+    </div>
+  </header>
 
-    <!-- Left half: text -->
-    <div class="px-6 md:px-12 py-20 text-center md:text-left">
-
-        <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1 rounded-full mb-6">
-        Your health, delivered
-        </span>
-
-        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-        Welcome to <span class="text-blue-600">TapMad</span>
-        </h1>
-
-        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-        TapMad is an online medicine ordering website that lets you browse, order,
-        and receive medicines from the comfort of your home. Upload prescriptions,
-        pay securely, and get your healthcare products delivered quickly to your doorstep.
-        </p>
-
-        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-        <button class="cursor-pointer bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-blue-600/30 hover:bg-blue-700 hover:-translate-y-0.5 transition">
-             Get Started
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 md:px-12 pt-14 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-[1.2fr_1fr] gap-14 items-center">
+    <div>
+      <h1 class="font-[Archivo_Black,sans-serif] uppercase text-5xl md:text-7xl leading-[0.95]">
+        Medicine,<br>
+        <span class="bg-[#FFE14D] px-2 -mx-2 box-decoration-clone">one tap</span> away.
+      </h1>
+      <p class="mt-7 max-w-lg text-lg md:text-xl leading-relaxed">
+        Order medicines online, upload your prescription, pay securely, and get it all delivered to your door.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <button class="cursor-pointer bg-[#5BE3A0] border-[3px] border-[#111] shadow-[6px_6px_0_#111] font-bold text-lg px-8 py-3.5 hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0_#111] transition focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#2F6BFF]">
+          Get started
         </button>
-        <button class="cursor-pointer border-2 border-green-600 text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-green-600 hover:text-white transition">
-            Learn More
+        <button class="cursor-pointer bg-white border-[3px] border-[#111] shadow-[6px_6px_0_#111] font-bold text-lg px-8 py-3.5 hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0_#111] transition focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-[#2F6BFF]">
+          Learn more
         </button>
-        </div>
-
+      </div>
     </div>
 
-    <!-- Right half: logo -->
-    <div class="flex items-center justify-center px-6 pb-12 md:p-12">
-        <img src="mainLogo.jpg" alt="TapMad Logo"
-            class="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover shadow-2xl ring-8 ring-white/60">
+    <!-- Sticker stack -->
+    <div class="relative mx-auto w-full max-w-sm h-[22rem]">
+      <div class="absolute top-0 left-0 w-60 bg-[#2F6BFF] text-white border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-5 -rotate-6">
+        <p class="font-[Archivo_Black,sans-serif] text-xl uppercase leading-tight">Upload your prescription</p>
+        <p class="mt-2 text-sm">Photo or file, in seconds.</p>
+      </div>
+      <div class="absolute top-28 right-0 w-56 bg-[#FF8FB1] border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-5 rotate-3">
+        <p class="font-[Archivo_Black,sans-serif] text-xl uppercase leading-tight">Pay securely</p>
+        <p class="mt-2 text-sm">Online, no cash needed.</p>
+      </div>
+      <div class="absolute bottom-0 left-6 w-64 bg-[#FFE14D] border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-5 -rotate-2 flex items-center gap-4">
+        <img src="mainLogo.jpg" alt="TapMad logo" class="h-16 w-16 rounded-full object-cover border-[3px] border-[#111] shrink-0">
+        <p class="font-[Archivo_Black,sans-serif] text-xl uppercase leading-tight">Delivered to your door</p>
+      </div>
     </div>
+  </section>
 
-    </main>
+  <!-- Ticker strip -->
+  <div class="bg-[#111] text-white border-y-4 border-[#111] overflow-hidden" aria-hidden="true">
+    <p class="font-[Archivo_Black,sans-serif] uppercase text-xl md:text-2xl py-4 px-6 whitespace-nowrap text-center">Medicines ✚ Prescriptions ✚ Healthcare ✚ Delivery ✚ Medicines ✚ Prescriptions</p>
+  </div>
+
+  <!-- Steps -->
+  <main id="steps" class="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24">
+    <h2 class="font-[Archivo_Black,sans-serif] uppercase text-3xl md:text-5xl leading-tight">How it works</h2>
+    <ol class="mt-12 grid md:grid-cols-3 gap-8">
+      <li class="bg-[#5BE3A0] border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-7">
+        <span class="font-[Archivo_Black,sans-serif] text-6xl">1</span>
+        <h3 class="mt-3 font-[Archivo_Black,sans-serif] uppercase text-xl">Find your medicine</h3>
+        <p class="mt-2 leading-relaxed">Browse and add what you need to your cart.</p>
+      </li>
+      <li class="bg-[#FFE14D] border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-7">
+        <span class="font-[Archivo_Black,sans-serif] text-6xl">2</span>
+        <h3 class="mt-3 font-[Archivo_Black,sans-serif] uppercase text-xl">Upload and pay</h3>
+        <p class="mt-2 leading-relaxed">Attach your prescription and pay securely online.</p>
+      </li>
+      <li class="bg-[#FF8FB1] border-[3px] border-[#111] shadow-[8px_8px_0_#111] p-7">
+        <span class="font-[Archivo_Black,sans-serif] text-6xl">3</span>
+        <h3 class="mt-3 font-[Archivo_Black,sans-serif] uppercase text-xl">Get it delivered</h3>
+        <p class="mt-2 leading-relaxed">Your order arrives at home, no pharmacy trip.</p>
+      </li>
+    </ol>
+  </main>
+
+  <!-- Closing call to action -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 md:px-12 pb-16">
+    <div class="bg-[#2F6BFF] text-white border-[3px] border-[#111] shadow-[10px_10px_0_#111] p-8 md:p-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <p class="font-[Archivo_Black,sans-serif] uppercase text-3xl md:text-4xl max-w-md leading-tight">Ready for your first order?</p>
+      <button class="cursor-pointer self-start bg-[#FFE14D] text-[#111] border-[3px] border-[#111] shadow-[6px_6px_0_#111] font-bold text-lg px-8 py-3.5 hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0_#111] transition focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white">
+        Get started
+      </button>
+    </div>
+    <p class="mt-10 text-sm"><span class="font-bold">TapMad</span> – Online medicine ordering and delivery</p>
+  </section>
+
 </body>
 </html>
